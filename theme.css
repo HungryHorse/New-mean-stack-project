@@ -1,3 +1,122 @@
-.searchBar{
-	border: none;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+form.searchBarForm{
+  margin: auto;
+  max-width: 300px;
+  padding: 5px;
+  float:left;
+}
+
+/* Style the search field */
+form.searchBarForm input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.searchBarForm button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchBarForm button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.searchBarForm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mainContainer{
+  width: auto;
+}
+
+.sideBar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideBar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideBar a:hover {
+  color: #f1f1f1;
+}
+
+.sideBar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#header{
+  width: 100%;
+  height: 50px;
+  background-color: #c8a2c8;
+  margin: 0px;
+}
+
+.navBar{
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin: 0px;
+}
+
+.navBar button{
+  background-color: transparent;
+  border: none;
+  width: auto;
+  min-height: 100%;
+  padding: 10px;
+}
+
+.navBar button:hover{
+  background-color: #0b7dda;
 }
