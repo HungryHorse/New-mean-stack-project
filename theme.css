@@ -53,7 +53,7 @@ form.searchBarForm::after {
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 50px;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -89,6 +89,8 @@ form.searchBarForm::after {
   color: white;
   padding: 10px 15px;
   border: none;
+  height: 100%;
+  width: 250px;
 }
 
 .openbtn:hover {
@@ -100,6 +102,10 @@ form.searchBarForm::after {
   height: 50px;
   background-color: #c8a2c8;
   margin: 0px;
+}
+
+.headerReact{
+  height:100%;
 }
 
 .navBar{
@@ -119,4 +125,10 @@ form.searchBarForm::after {
 
 .navBar button:hover{
   background-color: #0b7dda;
+}
+
+.navBar button::after {
+  content: "";
+  clear: both;
+  display: table;
 }
