@@ -4,8 +4,10 @@
   "description": "A test application for a new rest api",
   "main": "server.js",
   "dependencies": {
+    "ajax": "0.0.4",
     "express": "^4.17.1",
     "http": "^0.0.1-security",
+    "path": "^0.12.7",
     "react": "^16.13.1"
   },
   "devDependencies": {},
